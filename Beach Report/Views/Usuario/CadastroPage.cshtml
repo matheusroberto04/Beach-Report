@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/cadastrar.css" asp-append-version="true" />
+</head>
+<body>
+    <form  asp-action="LoginPage" asp-controller="Usuario" class="form">
+        <p class="title">Cadastro </p>
+        <p class="message">Cadastre-se para relatar! </p>
+        <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Nome</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="numb" class="input">
+                <span>Telefone</span>
+            </label>
+        </div>
+
+        <label>
+            <input required="" placeholder="" type="number" class="input">
+            <span>CPF</span>
+        </label>
+        <label>
+            <input required="" placeholder="" type="email" class="input">
+            <span>Email</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Senha</span>
+        </label>
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Confirmar Senha</span>
+        </label>
+        <button class="submit">Cadastrar</button>
+        @* <p class="signin">Ja tem uma conta ? <a href="#">Entrar</a> </p> *@
+        <a class="btn-link" asp-area="" asp-controller="Usuario" asp-action="LoginPage">Ja tem um conta? Entre para fazer a consultoria!</a>
+    </form>
+</body>
+</html>

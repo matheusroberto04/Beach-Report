@@ -1,0 +1,70 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/praia.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+    .login-box h2 {
+        margin-bottom: 20px;
+        color: #4A90E2;
+    }
+
+    .login-box label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .login-box input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4A90E2;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #357ABD;
+        }
+
+    .login-box a {
+        display: block;
+        margin-top: 10px;
+        color: #4A90E2;
+        text-decoration: none;
+    }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }

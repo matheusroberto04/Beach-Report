@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url('../images/praia.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-text {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+    }

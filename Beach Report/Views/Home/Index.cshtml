@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .btn-link {
+            display: inline-block;
+            text-decoration: none;
+            margin-left: 47%;
+            border-radius: 3px;
+            width: 160px;
+            text-align: center;
+            padding: 8px;
+            font-family: Verdana,Geneva, Tahoma, sans-serif;
+            font-size: 16;
+            background-color: #816e94;
+            color: #fff;
+            box-shadow: 2px 2px 2px #000;
+        }
+
+        .titulo {
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="titulo">Boas vindas ao Beach Report!</h2>
+    <br />
+    <br />
+    <a class="btn-link" asp-area="" asp-controller="Usuario" asp-action="LoginPage">Login</a>
+    <br />
+    <br />
+    <a class="btn-link" asp-area="" asp-controller="Usuario" asp-action="PerfilPage">Relatos</a>
+    <br />
+    <br />
+    <a class="btn-link" asp-area="" asp-controller="Menu" asp-action="MenuPage">Home</a>
+    <br />
+    <br />
+    <a class="btn-link" asp-area="" asp-controller="SobreNos" asp-action="SobreNosPage">O que somos?</a>
+
+</body>
+</html>

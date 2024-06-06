@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "PerfilPage";
+}
+
+<div class="perfil-container">
+    <h1>Relatos</h1>
+
+    <h2>Cleber_2005</h2>
+    <div class="post">
+        <div class="post-header">
+            <p>07/06/2023</p>
+        </div>
+        <div class="post-body">
+            <p>Neste final de semana eu e minha família fomos para Ubatuba, curtir uma praia! Chegando lá, nos deparamos com muito acúmulo de lixo na areia!!!</p>
+            <img src="~/images/image.jpg" alt="Imagem de lixo na praia" />
+        </div>
+        <div class="post-footer">
+            <button class="like-button">👍 70</button>
+            <button class="dislike-button">👎 2</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="perfil-container">
+    <h2>Anonimus_198</h2>
+    <div class="post">
+        <div class="post-header">
+            <p>12/03/2023</p>
+        </div>
+        <div class="post-body">
+            <p>Achei muito lixo na praia!! Tentei recolher  o que eu pude e joguei  em uma lixeira</p>
+            <img src="~/images/images.jpg" alt="Imagem de lixo na praia" />
+        </div>
+        <div class="post-footer">
+            <button class="like-button">👍 200</button>
+            <button class="dislike-button">👎 22</button>
+        </div>
+    </div>
+</div>
+
+<div class="perfil-container">
+    <h2>guRz_2</h2>
+    <div class="post">
+        <div class="post-header">
+            <p>12/03/2023</p>
+        </div>
+        <div class="post-body">
+            <p>Ontem ocorreu um luau aqui na Praia do Jabaquara e o pos-festa ficou um lixao completo! Acho um absurdo isso!!</p>
+            <img src="~/images/sujeira.jpg" alt="Imagem de lixo na praia" />
+        </div>
+        <div class="post-footer">
+            <button class="like-button">👍 1000</button>
+            <button class="dislike-button">👎 50</button>
+        </div>
+    </div>
+</div>
+<p>Gostaria de fazer um reporte? Clique no botão abaixo:</p>
+<div class="report-button">
+    <a asp-controller="Reporta" asp-action="ReportarPage">REPORTAR</a>
+</div>
+
+<style>
+    .perfil-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .perfil-container h2 {
+        color: #4A90E2;
+    }
+
+    .post {
+        background-color: #E6F1FB;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-header p {
+        font-size: 12px;
+        color: #9B9B9B;
+    }
+
+    .post-body p {
+        font-size: 14px;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .post-body img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .post-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .like-button, .dislike-button {
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .like-button {
+        color: #4CAF50;
+    }
+
+    .dislike-button {
+        color: #F44336;
+    }
+
+    .report-button {
+        margin-top: 20px;
+    }
+
+        .report-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4A90E2;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            .report-button a:hover {
+                background-color: #357ABD;
+            }
+</style>

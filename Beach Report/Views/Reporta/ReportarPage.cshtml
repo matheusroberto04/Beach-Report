@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Reportar";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/reporte.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BEACH REPORT</h1>
+        </header>
+        <main>
+            <h2>Novo Reporte</h2>
+            <form  asp-action="FeedPage" asp-controller="Feed">
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                <div class="map-container">
+                    <img src="~/images/map-image.png" alt="Map" />
+                </div>
+                <button type="button" class="location-button">COMPARTILHAR LOCALIZAÇÃO ATUAL</button>
+                <div class="file-upload">
+                    <label for="file-input">Anexo da foto: 📎</label>
+                    <input type="file" id="file-input" name="file-input" />
+                </div>
+                <button type="submit" class="submit-button">ENVIAR</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento pelo Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        .content {
+            margin-top: 20px;
+            color:black
+        }
+        .image {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200%;
+            border-radius: 10px;
+        }
+
+        .report-button {
+            margin-top: 20px;
+        }
+
+            .report-button a {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: #4A90E2;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+                .report-button a:hover {
+                    background-color: #357ABD;
+                }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Obrigado pelo reporte!</h1>
+        <div class="content">
+            <p>Obrigado pelo seu Feedback ele foi enviado com sucesso! E entraremos em contato com entidades de preservação ambiental e limpeza urbana para que possam tomar as medidas necessarias!</p>
+        </div>
+        <div class="image">
+            <img src="~/images/salvavidas.jpg" alt="Imagem de uma onda">
+        </div>
+        <div class="report-button">
+        <a asp-controller="Menu" asp-action="MenuPage">Menu</a>
+        </div>
+        <div class="report-button">
+            <a asp-controller="Usuario" asp-action="PerfilPage">Ver Relatos</a>
+        </div>
+    </div>
+</body>
+</html>

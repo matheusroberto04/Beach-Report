@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+</head>
+<body>
+<div class="header-logo">
+    <img src="~/images/logo.png" alt="Beach Report" />
+</div>
+
+<div class="container">
+    <img src="~/images/beach.jpg" alt="Beach" />
+    <div class="welcome-text">
+        Bem vindo ao Beach Report
+    </div>
+    <img src="~/images/turtle.jpg" alt="Turtle" />
+    <p>Gostaria de fazer um reporte? Clique no botão abaixo:</p>
+    <div class="report-button">
+        <a asp-controller="Reporta" asp-action="ReportarPage">REPORTAR</a>
+    </div>
+</div>
+</body>
+</html>

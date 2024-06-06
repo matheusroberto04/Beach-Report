@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Contato";
+}
+
+<div class="contato-container">
+    <h1>Contato</h1>
+    <ul>
+        <li>Número de telefone: (11) 3094-2640</li>
+        <li>WhatsApp: 11 99897-6659</li>
+        <li>Ouvidoria: 0800-5555</li>
+        <li>Email: beachreport@beachreport.com.br</li>
+        <li>Site: www.beachreport.com.br</li>
+    </ul>
+</div>
+
+<style>
+    .contato-container {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .contato-container h1 {
+            color: #4A90E2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contato-container ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+            .contato-container ul li {
+                margin: 10px 0;
+            }
+
+                .contato-container ul li::before {
+                    content: '──';
+                    margin-right: 10px;
+                    color: #333;
+                }
+</style>
